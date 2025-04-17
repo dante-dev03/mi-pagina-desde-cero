@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Mi primera página</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <h1>¡Hola, soy Dante!</h1>
   <p>Esta es mi primera página hecha desde cero.</p>
-  <img src="pagina.png" alt="Foto de Dante" width="250">
-  <div class="social">
-    <a href="https://github.com/dante-dev03" target="_blank">GitHub</a>
-    <a href="#">YouTube</a>
+
+  <img src="tu-imagen.jpg" alt="Imagen de Dante" />
+
+  <div class="botones">
+    <button>ENTRADA</button>
+    <button>SALIDA</button>
   </div>
-  
-</body>
-<div class="botones">
-    <button onclick="alert('Bienvenido, Amigo 🎉')">ENTRADA</button>
-    <button onclick="alert('Hasta luego, Amigo 👋')">SALIDA</button>
-  </div>
-  
-</html>
-<footer>
-    <p>&copy; 2025 - Página creada por Dante con esfuerzo, pasión y café ☕</p>
-  </footer>
+
   <section>
     <h2>Sobre mí</h2>
     <p>Estoy aprendiendo programación para transformar mi futuro, construir cosas increíbles y vivir sin límites 🚀</p>
   </section>
+  <section id="proyectos">
+    <h2>Mis Proyectos</h2>
+    <div class="proyecto">
+      <h3>🌐 Página Web Personal</h3>
+      <p>Mi primera página web hecha desde cero con HTML y CSS. ¡Como esta misma!</p>
+    </div>
+    <div class="proyecto">
+      <h3>💻 Portafolio de imágenes</h3>
+      <p>Proyecto donde mostraré mis diseños, ideas y creatividad en formato visual.</p>
+    </div>
+  </section>
+  <section id="contacto">
+    <h2>Contáctame</h2>
+    <form>
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo" required>
+      <textarea placeholder="Tu mensaje..." required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
   
+  <footer>
+    © 2025 - Página creada por Dante con esfuerzo, pasión y café ☕
+  </footer>
 </body>
 </html>
