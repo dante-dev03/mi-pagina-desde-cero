@@ -55,18 +55,33 @@
   </section>
   <section id="contacto">
     <h2>Contáctame</h2>
-    <form>
+    <form id="formulario">
       <input type="text" placeholder="Tu nombre" required>
       <input type="email" placeholder="Tu correo" required>
       <textarea placeholder="Tu mensaje..." required></textarea>
       <button type="submit">Enviar</button>
     </form>
+  
+    <p id="mensaje-gracias" style="display:none; color: green; font-weight: bold; margin-top: 10px;">
+      ¡Gracias por tu mensaje! 😎 Dante te responderá cuando esté listo para dominar el mundo del código.
+    </p>
   </section>
+  
   
   <footer>
     © 2025 - Página creada por Dante con esfuerzo, pasión y café ☕
   </footer>
   <a href="#inicio" class="arriba">🔝</a>
+  <script>
+    const formulario = document.getElementById('formulario');
+    const mensaje = document.getElementById('mensaje-gracias');
+  
+    formulario.addEventListener('submit', function(evento) {
+      evento.preventDefault(); // Evita que se recargue la página
+      mensaje.style.display = 'block'; // Muestra el mensaje
+      formulario.reset(); // Limpia el formulario
+    });
+  </script>  
 </body>
 <div class="fade-in">
   </div>
